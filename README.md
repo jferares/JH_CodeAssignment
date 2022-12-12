@@ -1,8 +1,10 @@
 # JH_CodeAssignment - Twitter Info API
 
 - appsettings.json contains strings for ApiKey and ApiKeySecret.  Provide those and the API will use them.
-./Requests/TwitterApi/ contains some http requests (within VSCode I use the REST Client extension, they're setup for that).  Primarily use CreateTwitterInfo.http to test the API itself.
-- The UnitTest project uses xUnit and the tests there are aimed at testing the logic that calls Twitter for Tweets and then puts them into a list and finds the Top10 Hashtags.  Note that the UnitTests make use of mock_tweets.json
+- ./Requests/TwitterApi/ contains some http requests (within VSCode I use the REST Client extension, they're setup for that).  Primarily use CreateTwitterInfo.http to test the API itself.  If you prefer, run the API and hit it with Postman (the api request requirements are noted following).
+- The UnitTest project uses xUnit and the tests there are aimed at testing the logic that calls Twitter for Tweets and then puts them into a list and finds the Top10 Hashtags.  Note that the UnitTests make use of mock_tweets.json.
+- If you haven't seen the ErrorOr class before, it's a sweet class for handling response with an Error state or the good value state for APIs:  https://github.com/amantinband/error-or
+- If I were to add database support to retain the data, it'd go into the Controller just before the return.  Probably would add some common handler / management classes to promote reuability, etc.  Each of these api paths will need DB CRUD operations to call in a consistent way.
 
 - [Twitter Info API](#twitter-info-api)
   - [Create Twitter Info](#create-twitter-info)
