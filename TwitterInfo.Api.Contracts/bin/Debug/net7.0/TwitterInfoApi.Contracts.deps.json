@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "TwitterInfo.Api.Contracts/1.0.0": {
+        "runtime": {
+          "TwitterInfo.Api.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TwitterInfo.Api.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
