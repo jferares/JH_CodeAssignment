@@ -1,0 +1,27 @@
+POST http://localhost:5172/TwitterInfos
+Content-Type: application/json
+
+{
+    "name": "Joe Twitter Info",
+    "description": "Info pulled for JH code challenge",
+    "duration": "5"
+}
+
+###
+
+GET http://localhost:5172/TwitterInfos/5a660e40-4f2c-442b-b357-367ac67af94b
+
+###
+
+PUT http://localhost:5172/TwitterInfos/5a660e40-4f2c-442b-b357-367ac67af94b
+Content-Type: application/json
+
+{
+    "name": "Joe Twitter Info 2",
+    "description": "Info pulled for JH code challenge",
+    "duration": "5"
+}
+
+###
+
+DELETE http://localhost:5172/TwitterInfos/5a660e40-4f2c-442b-b357-367ac67af94b

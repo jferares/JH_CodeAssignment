@@ -1,0 +1,6 @@
+GET https://api.twitter.com/2/tweets/sample/stream
+Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAFR7jwEAAAAAzyZ4lLYmPzhsyGsbYhnWGGPzhvw%3Dyxn0uTD9VbWKkxxKTQaZhgmIWJyLWt7FkPwFuEHz6CkedjhPWl
+
+###
+
+GET https://catfact.ninja/fact
