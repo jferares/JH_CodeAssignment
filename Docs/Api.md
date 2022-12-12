@@ -1,9 +1,18 @@
 # Twitter Info API
 
 - [Twitter Info API](#twitter-info-api)
+  - [Create Twitter Info](#create-twitter-info)
+    - [Create Twitter Info Request](#create-twitter-info-request)
+    - [Create Twitter Info Response](#create-twitter-info-response)
   - [Get Twitter Info](#get-twitter-info)
     - [Get Twitter Info Request](#get-twitter-info-request)
     - [Get Twitter Info Response](#get-twitter-info-response)
+  - [Update Twitter Info](#update-twitter-info)
+    - [Update Twitter Info Request](#update-twitter-info-request)
+    - [Update Twitter Info Response](#update-twitter-info-response)
+  - [Delete Twitter Info](#delete-twitter-info)
+    - [Delete Twitter Info Request](#delete-twitter-info-request)
+    - [Delete Twitter Info Response](#delete-twitter-info-response)
 
 ## Create Twitter Info
 
@@ -17,8 +26,8 @@ POST /twitterinfos
 {
     "name": "Joe Twitter Info",
     "description": "Info pulled for JH code challenge",
-    "startDateTime": "2022-12-07T08:00:00",
-    "endDateTime": "2022-12-07T11:00:00"
+    "requestedDateTime": "2022-12-07T08:00:00",
+    "duration": "5"
 }
 ```
 
@@ -37,8 +46,8 @@ Location: {{host}}/twitterinfos/{{id}}
     "id": "00000000-0000-0000-0000-000000000000",
     "name": "Joe Twitter Info",
     "description": "Info pulled for JH code challenge",
-    "startDateTime": "2022-12-07T08:00:00",
-    "endDateTime": "2022-12-07T11:00:00",
+    "requestedDateTime": "2022-12-07T08:00:00",
+    "duration": "5",
     "lastModifiedDateTime": "2022-04-06T12:00:00",
     "tweets": [
         "content",
@@ -80,8 +89,8 @@ GET /twitterinfos/{{id}}
     "id": "00000000-0000-0000-0000-000000000000",
     "name": "Joe Twitter Info",
     "description": "Info pulled for JH code challenge",
-    "startDateTime": "2022-12-07T08:00:00",
-    "endDateTime": "2022-12-07T11:00:00",
+    "requestedDateTime": "2022-12-07T08:00:00",
+    "duration": "5",
     "lastModifiedDateTime": "2022-04-06T12:00:00",
     "tweets": [
         "content",
@@ -116,8 +125,8 @@ PUT /twitterinfos/{{id}}
 {
     "name": "Joe Twitter Info",
     "description": "Info pulled for JH code challenge",
-    "startDateTime": "2022-12-07T08:00:00",
-    "endDateTime": "2022-12-07T11:00:00",
+    "requestedDateTime": "2022-12-07T08:00:00",
+    "duration": "5",
     "lastModifiedDateTime": "2022-04-06T12:00:00",
     "tweets": [
         "content",
